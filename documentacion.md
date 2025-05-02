@@ -73,6 +73,8 @@ Supongamos que tenemos mas de un archivo en nuestra carpeta de trabajo y para qu
      
 ## Revisar Historial
 
+![image alt] (https://github.com/BethaBrayan01/Inicializacion-en-Git-md/blob/fa70279aa805133bd17173b0b3fce56ee5e286cb/historial.png)
+
 El siguiente comando nos motrarà el nombre la persona que hizo algun cambio, su correo y un mensaje de commit:
 
 * git log
@@ -83,6 +85,81 @@ Pero al ser muy detallado nos puede confundir, asi que podemos ejecutar el sigui
     
 En la parte (HEAD - master) mostrando status corto, nos dice donde estas, te dice "estas aqui", para salir de ese cuadro presionas la tecla q (hay casos en el que ejecutas el git log --oneline y te muestra el historial y no hay necesidad de presionar la tecla q)
 
+## Ramas o Branches
+
+![image alt](https://github.com/BethaBrayan01/Inicializacion-en-Git-md/blob/master/branches.png)
+
+En la parte que dice "your work / someone else's work es una rama independiente cuando varios programadores trabajando en un mismo proyecto y cuando uno (yo) quiere trabajar independientemente y hacemos el trabajo necesario y cuando hayamos terminado podemos solicitar realizar un merge a la rama de master y podemos continuar con el desarrollo del programa.
+
+Ahora ejecutamos un git status y nos mostrarà: 
+
+* modificados : archivo.txt (en color verde)
+y luego restauramos el archivo:
+
+* git restore --staged archivo.txt
+y ejecutamos git status y nos mostrarà:
+
+* modificados: archcivo.txt (en rojo)
+y descartamos esos cambios con el siguiente comando:
+
+* git restore archivo.txt
+ejecutamos el comando git status y nos mostrarà que no hay nada para hacer commit, el arbol de trabajo esta limpio.
+Ahora antes de crear una rama, veremos en que rama NOSOTROS estamos, ejecutamos el siguiente comando:
+
+* git branch
+
+Nos mostrarà que estamos en la rama master que es la principal, ahora si queremos crear una rama, ejecutamos el comando:
+
+* git checkout -b nombre_de_la_rama (ejemplo que la rama se llame ramab), nos mostrarà que nos hemos cambiado a una rama "ramab" y volvemos a ejecutar:
+
+* git branch y nos mostrara las ramas que hay y a la que cambiamos (ramab):
+
+- master
+- ramab (en color verde)
+
+Luego regresamos a VSC y realizamos los cambios necesaior en nuestro archivo.txt, guardamos y ejecutamos el comando git status y nos mostrarà:
+
+* modificado: archivo.txt (en rojo)
+
+ahora lo agregamos con:
+
+* git add archivo.txt
+
+Y luego hacemos un commit:
+
+* git commit -m "actualizado archvio"
+
+Y nos mostrarà por pantalla:
+
+actulizado archivo 
+"nro" file changed, "nro" insertios (+), "nro" deletions (-)
+
+--> "nro" quiere decir la cantidad.
+
+Una vez ejecutado el archivo, podemos ver el historial en el cual nos encontramos trabajando ejecutando el comando:
+
+* git log --oneline
+
+Nos mostarà el historial de todo lo que estuvimos haciendo hasta ahora comiteando, en la parte (HEAD - ramab) actualizado archivo nos indica que estamos en la cabeza, pero quiere decir que es la ultima actualizacion que se hizo en esa rama.
+
+Ahora para cambiar a la rama principal (master) ejecutamos el siguiente comando:
+
+* git checkout master
+
+Para poder trabajar luego ejecutamos los siguientes pasos:
+
+* abrimos nuetsro trabajo en VSC.
+* hacemos los respectivos cambios en nuestro proyecto.
+* guardamos. 
+
+y desde la terminal ejecutamos:
+
+* git add nombre_archivo
+* git commit -m "mensaje claro y descriptivo de lo que se hizo"
+* git push simepre y cuando tengamos una cuenta en github, en caso de que lo tengas aùn puedes guardar el trabajo y lo puedes subir cuando tengas una cuenta en github.
+
+
+Hasta aca esta guia ràpida y sencilla de git, espero que te haya sido util.
 
 
 ---
