@@ -75,11 +75,14 @@ Supongamos que tenemos mas de un archivo en nuestra carpeta de trabajo y para qu
 ## Revisar Historial
 
 El siguiente comando nos motrarà el nombre la persona que hizo algun cambio, su correo y un mensaje de commit:
-    * git log
+
+* git log
+
 Pero al ser muy detallado nos puede confundir, asi que podemos ejecutar el siguiente comando :
-    * git log --oneline nos mostrarà un pequeño historial con un pequeño hash que sirve como identificador de ese commit seguido de mensajes que ponemos en cad commit, por eso es importante que los nombres como mensajes dentro de los commit sean algo que tengan sentido
+
+* git log --oneline nos mostrarà un pequeño historial con un pequeño hash que sirve como identificador de ese commit seguido de mensajes que ponemos en cad commit, por eso es importante que los nombres como mensajes dentro de los commit sean algo que tengan sentido
     
-    En la parte (HEAD - master) mostrando status corto, nos dice donde estas, te dice "estas aqui", para salir de ese cuadro presionas la tecla q (hay casos en el que ejecutas el git log --oneline y te muestra el historial y no hay necesidad de presionar la tecla q)
+En la parte (HEAD - master) mostrando status corto, nos dice donde estas, te dice "estas aqui", para salir de ese cuadro presionas la tecla q (hay casos en el que ejecutas el git log --oneline y te muestra el historial y no hay necesidad de presionar la tecla q)
 
 
 
