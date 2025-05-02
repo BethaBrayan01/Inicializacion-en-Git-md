@@ -1,7 +1,10 @@
 # GUIA RAPIDO Y SENCILLA PARA USAR GIT
 
 
----
+
+
+![image alt](https://github.com/BethaBrayan01/Inicializacion-en-Git-md/blob/fa70279aa805133bd17173b0b3fce56ee5e286cb/giit.png)
+
 ---
 
 ## Introducción
