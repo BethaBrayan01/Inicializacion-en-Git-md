@@ -2,7 +2,7 @@
 
 
 ---
-https://github.com/BethaBrayan01/Inicializacion-en-Git-md/blob/master/giit.png?raw=true
+https://github.com/BethaBrayan01/Inicializacion-en-Git-md/blob/8feedaf40a85110ce0c8095a2b586b74f9094d30/giit.png
 ---
 
 ## Introducción
