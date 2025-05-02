@@ -2,7 +2,6 @@
 
 
 ---
-![image alt](https://github.com/BethaBrayan01/Inicializacion-en-Git-md/blob/686bcfc403e38d151c27deb963040fb4881e587e/giit.png)
 ---
 
 ## Introducción
