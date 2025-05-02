@@ -160,17 +160,3 @@ y desde la terminal ejecutamos:
 
 
 Hasta aca esta guia ràpida y sencilla de git, espero que te haya sido util.
-
-
----
-
-## Conclusiones
-
-Reflexiones finales, resultados o propuestas.
-
----
-
-## Bibliografía
-
-- Fuente 1
-- Fuente 2
